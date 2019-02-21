@@ -1,0 +1,121 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.logo
+{
+    vertical-align: middle;
+}
+
+.botao
+{
+    background-color: #064D83;
+    margin: 0 0 0 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.botao:hover
+{
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.formulario fieldset
+{
+    float: left;
+    margin: 0 0 20px 0;
+    border: 1px solid #333333;
+}
+
+.formulario fieldset legend
+{
+    color: #064d83;
+    font-weight: bold;
+}
+
+.botao-formulario
+{
+    background-color: #064D83;
+    color: #ffffff;
+    padding: 5px;
+    vertical-align: middle;
+    border: none;
+}
+
+.titulo
+{
+    color: #064D83;
+    clear: both;
+}
+
+.tabela
+{
+    border: 1px solid #064D83;
+    border-collapse: collapse;
+}
+
+.tabela tr th
+{
+    background-color: #064D83;
+    color: #ffffff;
+}
+
+.tabela tr, .tabela tr td
+{
+    border: 1px solid #064D83;
+    padding: 2px 5px;
+}
+
+/* styles for validation helpers */
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}

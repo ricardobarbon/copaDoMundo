@@ -1,0 +1,56 @@
+﻿@model IEnumerable<K19_CopaDoMundo.Models.Jogador>
+@{
+    ViewBag.Title = "Lista de Jogadores";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create new", "Create")
+</p>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Posicao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Altura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelecaoId)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Posicao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Altura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SelecaoId)
+            </td>
+            <td>
+                @Html.ActionLink("Remover", "Delete", new { id = item.Id})
+            </td>
+
+        </tr>
+    }
+</table>
+

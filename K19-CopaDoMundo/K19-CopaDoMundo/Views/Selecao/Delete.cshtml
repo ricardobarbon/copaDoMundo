@@ -1,0 +1,34 @@
+﻿@model K19_CopaDoMundo.Models.Selecao
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Remoção de seleção</h2>
+
+<h3> Você tem certeza que deseja excluir esta seleção?</h3>
+
+<fieldset>
+    <legend>Seleção</legend>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Pais)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pais)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Tecnico)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tecnico)
+    </div>
+</fieldset>
+@using (Html.BeginForm())
+{
+    <p>
+        <input type="submit" value="Delete"/> | @Html.ActionLink("Listagem de seleções", "Index")
+    </p>
+}
+

@@ -1,0 +1,52 @@
+﻿@model K19_CopaDoMundo.Models.Jogador
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Remoção de seleção</h2>
+
+<h3> Você tem certeza que deseja excluir este jogador?</h3>
+
+<fieldset>
+    <legend>Jogador</legend>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Posicao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Posicao)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Nascimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nascimento)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Altura)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Altura)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.SelecaoId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelecaoId)
+    </div>
+</fieldset>
+@using (Html.BeginForm())
+{
+    <p>
+        <input type="submit" value="Delete" /> | @Html.ActionLink("Listagem de jogadores", "Index")
+    </p>
+}
+

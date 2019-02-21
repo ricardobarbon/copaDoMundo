@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Copa do Mundo</title>
+    <link href="~/__TemplateIcon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width"/>
+    @Styles.Render("~/Content/themes/base/css", "~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title"><img class="logo" src="~/Images/K19-logo.jpg" alt="K19 Logo"/></p>
+            </div>
+            <div class="float-right">
+                <nav>
+                    <ul id="menu">
+                        <li>@Html.ActionLink("Selecoes", "Index", "Selecao", null, new { @class = "botao"})</li>
+                        <li>@Html.ActionLink("Jogadores", "Index", "Jogador", null, new { @class = "botao" })</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix">@RenderBody()</section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - K19 Copa do Mundo</p>
+            </div>
+            <div class="float-right">
+                <ul id="social">
+                    <li><a href="http://facebook.com/k19treinamentos" class="facebook">Facebook - K19 Treinamentos</a></li>
+                    <li><a href="http://twitter.com/k19treinamentos" class="twitter">Twitter - K19 Treinamentos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
