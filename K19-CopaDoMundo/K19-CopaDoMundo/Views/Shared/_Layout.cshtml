@@ -15,6 +15,9 @@
                 <p class="site-title"><img class="logo" src="~/Images/K19-logo.jpg" alt="K19 Logo"/></p>
             </div>
             <div class="float-right">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
                 <nav>
                     <ul id="menu">
                         <li>@Html.ActionLink("Selecoes", "Index", "Selecao", null, new { @class = "botao"})</li>

@@ -172,6 +172,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JogadorController.cs" />
     <Compile Include="Controllers\SelecaoController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,6 +182,7 @@
     <Compile Include="Models\Selecao.cs" />
     <Compile Include="Models\SelecaoRepository.cs" />
     <Compile Include="Models\UnitOfWork.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +230,11 @@
     <Content Include="Views\Jogador\Create.cshtml" />
     <Content Include="Views\Jogador\Index.cshtml" />
     <Content Include="Views\Jogador\Delete.cshtml" />
+    <Content Include="Views\Usuario\ChangePassword.cshtml" />
+    <Content Include="Views\Usuario\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Usuario\Login.cshtml" />
+    <Content Include="Views\Usuario\Register.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
